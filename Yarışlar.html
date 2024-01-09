@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet"  href="style3.css">
+    <title>F1 World Championship 2023</title>
+    <style>
+        .baslık {
+            font-size: 3em;
+            position: absolute;
+            margin-left: 25%;
+            top: 8%;
+            color: rgb(0, 0, 0);
+            font-family: serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #6d0000,0 0 40px #290000;
+        }
+        img {
+            max-width: 40%; /* Resmin maksimum genişliği sayfanın genişliğine göre ayarlanır */
+            height: auto;    /* Resmin orantılı olarak yüksekliği ayarlanır */
+            margin-left: 17%;
+            border-radius: 10px; /* Köşeleri yuvarlak yapma değeri */
+        }
+        .büyük-image {
+            max-width: 700px; /* ilk fotoğrafın büyüklüğü */
+            height: auto;
+            margin-left: 17%;
+        }
+        table {
+            margin-left: 17%;
+            width: 40%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #e6e6e6;
+        }
+        tr:hover {
+            background-color: #7b7b7b;
+        }
+        .flag {
+            width: 20px; /* Ayarlamak istediğiniz genişlik */
+            height: 15px; /* Ayarlamak istediğiniz yükseklik */
+            margin-right: 5px; /* Bayraklar arasındaki boşluk */
+        }
+        h2{
+            margin-left: 17%;
+        }
+        h3{
+            margin-left: 17%;
+        }
+        p{
+            margin-left: 17%;
+        }
+        .ozel-p{
+            margin-left: 17%;
+            color: red;
+        }
+        .champ{
+            cursor: pointer;
+            width: 700px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.125em;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff;
+            background: #0a0066;
+            border: 2px solid #06003c;
+            border-radius: .75rem;
+            box-shadow: 0 8px 0 #0a0066;
+            transform: skew(-10deg);
+            transition: all .1s ease;
+            filter: drop-shadow(0 15px 20px #0a0066);
+            margin-left: 17%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Sayfanın en üstüne git fonksiyonu
+        function goToTop() {
+            // Sayfanın en üstüne smooth animasyonu ile git
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" 
+            });
+        }
+        // Kullanıcının sayfa kaydırdığı zaman kontrol eden fonksiyon
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollTopBtn = document.getElementById("scrollTopButton");
+        }
+        function sayfayaGit(hedef) {
+            var hedefElement = document.getElementById(hedef);
+
+            if (hedefElement) {
+                // Hedef başlığın konumuna kaydır (smooth bir animasyon eklenmiştir)
+                hedefElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+    <button onclick="goToTop()" id="scrollTopButton" title="Sayfanın en üstüne git"> ↑ </button>
+    <ul>
+        <li><a href="Anasayfa.html">Anasayfa</a></li>
+        <li><a href="Hakkında.html">Hakkında</a></li>
+        <li><a href="Markalar.html">Markalar</a></li>
+        <li><a href="Sürücüler.html">Sürücüler</a></li>
+        <li><a href="Yarışlar.html">Yarışlar</a></li>
+    </ul>
+    <div class="baslık">En Prestijli Otomobil Yarışı:<br>F1 2023 Sezonu Yarışları</div>
+    <br><br><br><br><br><br><br><br>
+    <h1>Gitmek istediğiniz yarış için tıklayın:</h1>
+    <button class="button13" onclick="sayfayaGit('bahreyn')">BAHREYN GP</button>
+    <button class="button13" onclick="sayfayaGit('arabistan')">S. ARABİSTAN GP</button>
+    <button class="button13" onclick="sayfayaGit('avustralya')">AVUSTRALYA GP</button>
+    <button class="button13" onclick="sayfayaGit('azerbaycan')">AZERBAYCAN GP</button>
+    <button class="button13" onclick="sayfayaGit('miami')">MİAMİ GP</button>
+    <button class="button13" onclick="sayfayaGit('romagna')">E. ROMAGNA GP</button>
+    <button class="button13" onclick="sayfayaGit('monaco')">MONACO GP</button>
+    <button class="button13" onclick="sayfayaGit('ispanya')">İSPANYA GP</button>
+    <button class="button13" onclick="sayfayaGit('kanada')">KANADA GP</button>
+    <button class="button13" onclick="sayfayaGit('avusturya')">AVUSTURYA GP</button>
+    <button class="button13" onclick="sayfayaGit('britanya')">BRİTANYA GP</button>
+    <button class="button13" onclick="sayfayaGit('macaristan')">MACARİSTAN GP</button>
+    <button class="button13" onclick="sayfayaGit('belçika')">BELÇİKA GP</button>
+    <button class="button13" onclick="sayfayaGit('hollanda')">HOLLANDA GP</button>
+    <button class="button13" onclick="sayfayaGit('italya')">İTALYA GP</button>
+    <button class="button13" onclick="sayfayaGit('singapur')">SİNGAPUR GP</button>
+    <button class="button13" onclick="sayfayaGit('japonya')">JAPONYA GP</button>
+    <button class="button13" onclick="sayfayaGit('katar')">KATAR GP</button>
+    <button class="button13" onclick="sayfayaGit('abd')">ABD GP</button>
+    <button class="button13" onclick="sayfayaGit('meksika')">MEKSİKA GP</button>
+    <button class="button13" onclick="sayfayaGit('brezilya')">BREZİLYA GP</button>
+    <button class="button13" onclick="sayfayaGit('vegas')">LAS VEGAS GP</button>
+    <button class="button13" onclick="sayfayaGit('abudabi')">ABU DABİ GP</button>
+    <button class="button13" onclick="sayfayaGit('markalar')">MARKALAR ŞAMPİYONU</button>
+    <button class="button13" onclick="sayfayaGit('sürücüler')">SÜRÜCÜLER ŞAMPİYONU</button>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    
+    <h2 id="bahreyn">Bahreyn GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>5 Mar 2023 Paz 18:00</p>
+    <p><strong>Pist:</strong>Bahreyn Uluslararası Pisti</p>
+    <p><strong>Pist Uzunluğu:</strong>5.412km</p>
+    <p><strong>Tur Sayısı:</strong>57</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=f9j8nhMNYO4" target="_blank"><img src="bahreyngp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. VERSTAPPEN</td>
+            <td>1:33:56.736</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mx-2.svg">S. Perez</td>
+            <td>+11.987s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+38.637s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+48.052s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+50.977s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+54.502s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+55.873s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fi-2.svg">V. Bottas</td>
+            <td>+72.647s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+73.753s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+89.774s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="arabistan">Suudi Arabistan GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>19 Mar 2023 Paz 20:00</p>
+    <p><strong>Pist:</strong>Jeddah Corniche Circuit</p>
+    <p><strong>Pist Uzunluğu:</strong>6.175km</p>
+    <p><strong>Tur Sayısı:</strong>50</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=BxGpi0racMc" target="_blank"><img src="arabistangp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="mx-2.svg">S. Perez</td>
+            <td>1:21:14.894</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>+5.355s</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+20.728s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+25.866s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+31.065s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+35.876s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+43.162s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+52.832s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+54.747s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="dk-2.svg">K. Magnussen</td>
+            <td>+64.826s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="avustralya">Avustralya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>2 Nis 2023 Paz 08:00</p>
+    <p><strong>Pist:</strong>Melbourne Grand Prix Pisti</p>
+    <p><strong>Pist Uzunluğu:</strong>5.278km</p>
+    <p><strong>Tur Sayısı:</strong>58</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=FExS3lFEwqc" target="_blank"><img src="avustralyagp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>2:32:38.371</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+0.179s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+0.769s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+3.082s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="mx-2.svg">S. Perez</td>
+            <td>+3.320s</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+3.701s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="de-2.svg">N. Hülkenberg</td>
+            <td>+4.939s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+5.382s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="cn-2.svg">Z. Guanyu</td>
+            <td>+5.713s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="jp-2.svg">Y. Tsunoda</td>
+            <td>+6.052s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="azerbaycan">Azerbaycan GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>30 Nis 2023 Paz 14:00</p>
+    <p><strong>Pist:</strong>Bakü Şehir Pisti</p>
+    <p><strong>Pist Uzunluğu:</strong>6.003km</p>
+    <p><strong>Tur Sayısı:</strong>51</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=nJIrvbkr4pk" target="_blank"><img src="azerbaycangp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="mx-2.svg">S. Perez</td>
+            <td>1:32:42.436</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>+2.137s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+21.217s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+22.024s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+45.591s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+46.145s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+51.617s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+74.240s</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+80.376s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="jp-2.svg">Y. Tsunoda</td>
+            <td>+83.862s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="miami">Miami GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>7 May 2023 Paz 22:30</p>
+    <p><strong>Pist:</strong>Miami Uluslararası Otodromu</p>
+    <p><strong>Pist Uzunluğu:</strong>5.412km</p>
+    <p><strong>Tur Sayısı:</strong>51</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=2-jvlhc7c58" target="_blank"><img src="miamigp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:27:38.241</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mx-2.svg">S. Perez</td>
+            <td>+5.384s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+26.305s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+33.229s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+42.511s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+51.249s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+52.988s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+55.670s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+58.123s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="dk-2.svg">K. Magnussen</td>
+            <td>+62.945s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="romagna">Emilia Romagna GP Yarış Bilgileri</h2>
+    <p class="ozel-p"><strong>İptal Edildi</strong></p>
+    <p><strong>Pist:</strong>Autodromo Enzo e Dino Ferrari</p>
+    <p><strong>Pist Uzunluğu:</strong>4.909km</p>
+    <p><strong>Tur Sayısı:</strong>63</p>
+
+    <br><br><br>
+
+    <h2 id="monaco">Monaco GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>28 May 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Circuit de Monaco</p>
+    <p><strong>Pist Uzunluğu:</strong>3.337km</p>
+    <p><strong>Tur Sayısı:</strong>78</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=JyBq7XYDiBg" target="_blank"><img src="monacogp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:48:51.980</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+27.921s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+36.990s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+39.062s</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+42.511s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+61.890s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+62.362s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+63.391s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+1 Tur</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+1 Tur</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="ispanya">İspanya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>4 Haz 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Circuit de Barcelona-Catalunya</p>
+    <p><strong>Pist Uzunluğu:</strong>4.675 km</p>
+    <p><strong>Tur Sayısı:</strong>66</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=Yd5FCI0JWMg" target="_blank"><img src="ispanyagp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:27:57.940</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+24.090s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+32.389s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+35.812s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+45.698s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+63.320s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+64.127s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+69.242s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="cn-2.svg">C. Guanyu</td>
+            <td>+71.878s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+73.530s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="kanada">Kanada GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>18 Haz 2023 Paz 21:00</p>
+    <p><strong>Pist:</strong>Circuit Gilles Villeneuve</p>
+    <p><strong>Pist Uzunluğu:</strong>4.361km</p>
+    <p><strong>Tur Sayısı:</strong>70</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=yX_GUhWiBHk" target="_blank"><img src="kanadagp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:33:58.348</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+9.570s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+14.168s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+18.648s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+21.540s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+51.028s</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+60.813s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+61.692s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+64.402s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fi-2.svg">V. Bottas</td>
+            <td>+64.432s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="avusturya">Avusturya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>2 Tem 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Red Bull Ring</p>
+    <p><strong>Pist Uzunluğu:</strong>4.318km</p>
+    <p><strong>Tur Sayısı:</strong>71</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=gzwm8hYryro" target="_blank"><img src="avusturyagp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:25:33.607</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+5.155s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+17.188s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+26.327s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+30.317s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+31.377s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+48.403s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+49.196s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+59.043s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+67.667s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="britanya">Britanya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>9 Tem 2023 Paz 17:00</p>
+    <p><strong>Pist:</strong>Silverstone Circuit</p>
+    <p><strong>Pist Uzunluğu:</strong>5.891 km</p>
+    <p><strong>Tur Sayısı:</strong>52</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=NxQT7GIkPLI" target="_blank"><img src="britanyagp.jpg"></a>
+
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:25:16.938</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+3.798s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+6.783s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+7.776s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+11.206s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+12.882s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+17.193s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+17.878s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+18.689s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+19.448s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="macaristan">Macaristan GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>23 Tem 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Hungaroring</p>
+    <p><strong>Pist Uzunluğu:</strong>4.381 km</p>
+    <p><strong>Tur Sayısı:</strong>70</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=ZANotpFRoMo" target="_blank"><img src="macaristangp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:38:08.634</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+33.731s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+37.603s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+39.134s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+62.572s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+65.825s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+70.317s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+71.073s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+75.709s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+1 Tur</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="belçika">Belçika GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>30 Tem 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Spa-Francorchamps</p>
+    <p><strong>Pist Uzunluğu:</strong>7.004 km</p>
+    <p><strong>Tur Sayısı:</strong>44</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=C6h7NnkX7hk" target="_blank"><img src="belçikagp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:22:30.450</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+22.305s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+32.259s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+49.671s</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+56.184s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+63.101s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+73.719s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+74.719s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+79.340s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="jp-2.svg">Y. Tsunoda</td>
+            <td>+80.221s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 class="ozel-p">4 HAFTALIK YAZ ARASI...</h2>
+
+    <br><br><br>
+
+    <h2 id="hollanda">Hollanda GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>27 Ağu 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Circuit Zandvoort</p>
+    <p><strong>Pist Uzunluğu:</strong>4.259 km</p>
+    <p><strong>Tur Sayısı:</strong>72</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=Ao7X7BS_vIs" target="_blank"><img src="hollandagp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>2:24:04.411</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+3.744s</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+7.058s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+10.068s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+12.541s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+13.209s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+13.232s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+15.155s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+16.580s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+18.346s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="italya">İtalya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>3 Eyl 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Autodromo Nazionale Monza</p>
+    <p><strong>Pist Uzunluğu:</strong>5.793 km</p>
+    <p><strong>Tur Sayısı:</strong>51</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=bd9eALWJRzY" target="_blank"><img src="italyagp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:13:41.143</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+6.064s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+11.193s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+11.377s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+23.028s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+42.679s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+45.106s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+45.449s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+46.294s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fi-2.svg">V. Bottas</td>
+            <td>+64.056s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="singapur">Singapur GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>17 Eyl 2023 Paz 15:00</p>
+    <p><strong>Pist:</strong>Marina Bay Street Circuit</p>
+    <p><strong>Pist Uzunluğu:</strong>4.928 km</p>
+    <p><strong>Tur Sayısı:</strong>62</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=8TmrPvoHSGQ" target="_blank"><img src="singapurgp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>1:46:37.418</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+0.812s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+1.269s</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+21.177s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>+21.441s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+38.441s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+41.479s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+54.534s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="au-2.svg">L. Lawson</td>
+            <td>+65.918s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="dk-2.svg">K. Magnussen</td>
+            <td>+72.116s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="japonya">Japonya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>24 Eyl 2023 Paz 08:00</p>
+    <p><strong>Pist:</strong>Suzuka Pisti</p>
+    <p><strong>Pist Uzunluğu:</strong>5.807 km</p>
+    <p><strong>Tur Sayısı:</strong>53</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=rPLxuLE62gI" target="_blank"><img src="japonyagp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:30:58.421</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+19.387s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+36.494s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+43.998s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+49.376s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+50.221s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+57.659s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+74.725s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+79.678s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fi-2.svg">P. Gasly</td>
+            <td>+83.155s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="markalar" class="champ">RED BULL RACİNG MARKALAR ŞAMPİYONU...</h2>
+
+    <img class="büyük-image" src="markalarf1.jpg">
+
+    <br><br><br>
+
+    <h2 id="katar">Katar GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>8 Eki 2023 Paz 20:00</p>
+    <p><strong>Pist:</strong>Losail Circuit</p>
+    <p><strong>Pist Uzunluğu:</strong>5.380 km</p>
+    <p><strong>Tur Sayısı:</strong>57</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=meckBwrnZnU" target="_blank"><img src="katargp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:27:39.168</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+4.833s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+5.969s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+34.119s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+38.976s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+49.032s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+62.390s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="fi-2.svg">V. Bottas</td>
+            <td>+66.563s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="cn-2.svg">Z. Guanyu</td>
+            <td>+76.127s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+80.181s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="sürücüler" class="champ">MAX VERSTAPPEN SÜRÜCÜLER ŞAMPİYONU...</h2>
+
+    <img class="büyük-image" src="sürücülerf1.jpg">
+
+    <br><br><br>
+
+    <h2 id="abd">ABD GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>22 Eki 2023 Paz 22:00</p>
+    <p><strong>Pist:</strong>Circuit of the Americas</p>
+    <p><strong>Pist Uzunluğu:</strong>5.513 km</p>
+    <p><strong>Tur Sayısı:</strong>56</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=OTbaG_uTn-M" target="_blank"><img src="abdgp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:35:21.362</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+10.730s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+15.134s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+18.460s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+24.999s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+47.996s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+48.696s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="jp-2.svg">Y. Tsunoda</td>
+            <td>+74.385s</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+86.714s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="us-2.svg">L. Sargeant</td>
+            <td>+87.998s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="meksika">Meksika GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>29 Eki 2023 Paz 23:00</p>
+    <p><strong>Pist:</strong>Autódromo Hermanos Rodríguez</p>
+    <p><strong>Pist Uzunluğu:</strong>4.304 km</p>
+    <p><strong>Tur Sayısı:</strong>71</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=PtRf6VS15oM" target="_blank"><img src="meksikagp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>2:02:30.814</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+13.875s</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+23.124s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr.</td>
+            <td>+27.154s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+33.266s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+41.020s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="au-2.svg">D. Ricciardo</td>
+            <td>+41.570s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+43.104s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="th-2.svg">A. Albon</td>
+            <td>+48.573s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+62.879s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="brezilya">Brezilya GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>5 Kas 2023 Paz 20:00</p>
+    <p><strong>Pist:</strong>Autódromo José Carlos Pace</p>
+    <p><strong>Pist Uzunluğu:</strong>4.309 km</p>
+    <p><strong>Tur Sayısı:</strong>71</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=WkLTWmlTaJM" target="_blank"><img src="brezilyagp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:56:48.894</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+8.277s</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+34.155s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+34.208s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+40.845s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr</td>
+            <td>+50.188s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="fr-2.svg">P. Gasly</td>
+            <td>+56.093s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+62.859s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="jp-2.svg">Y. Tsunoda</td>
+            <td>+69.880s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+1 Tur</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="vegas">Las Vegas GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>19 Kas 2023 Paz 09:00</p>
+    <p><strong>Pist:</strong>Las Vegas Street Circuit</p>
+    <p><strong>Pist Uzunluğu:</strong>6.201 km</p>
+    <p><strong>Tur Sayısı:</strong>50</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=Q9qSwDxF6YI" target="_blank"><img src="vegasgp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:29:08.289</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+2.070s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+2.241s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="fr-2.svg">E. Ocon</td>
+            <td>+18.665s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+20.067s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="es-2.svg">C. Sainz Jr</td>
+            <td>+20.834s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+21.755s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+23.091s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+25.964s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+29.496s</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="abudabi">Abu Dabi GP Yarış Bilgileri</h2>
+    <p><strong>Tarih:</strong>26 Kas 2023 Paz 16:00</p>
+    <p><strong>Pist:</strong>Yas Marina Pisti</p>
+    <p><strong>Pist Uzunluğu:</strong>5.281 km</p>
+    <p><strong>Tur Sayısı:</strong>58</p>
+
+    <h3>Race Highlights <br>(İzlemek için resme tıklayın)</h3>
+    <a href="https://www.youtube.com/watch?v=9Z6rtYo1qBU" target="_blank"><img src="abudabigp.jpg"></a>
+    <h3>Race Results<br>(İlk 10)</h3>
+    <table>
+        <tr>
+            <th>Pozisyon</th>
+            <th>Sürücü</th>
+            <th>Zaman</th>
+            <th>Puan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img class="flag" src="nl-2.svg">M. Verstappen</td>
+            <td>1:27:02.624</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img class="flag" src="mc-2.svg">C. Leclerc</td>
+            <td>+17.993s</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img class="flag" src="gb-2.svg">G. Russell</td>
+            <td>+20.328s</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img class="flag" src="mx-2.svg">S. Pérez</td>
+            <td>+21.453s</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img class="flag" src="gb-2.svg">L. Norris</td>
+            <td>+24.284s</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img class="flag" src="au-2.svg">O. Piastri</td>
+            <td>+31.487s</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img class="flag" src="es-2.svg">F. Alonso</td>
+            <td>+39.512s</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img class="flag" src="jp-2.svg">Y. Tsunoda</td>
+            <td>+43.088s</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img class="flag" src="gb-2.svg">L. Hamilton</td>
+            <td>+44.424s</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img class="flag" src="ca-2.svg">L. Stroll</td>
+            <td>+55.632s</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+</body>
+</html>

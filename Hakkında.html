@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 World Championship 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .baslık {
+            font-size: 3em;
+            position: absolute;
+            margin-left: 17%;
+            top: 8%;
+            color: rgb(0, 0, 0);
+            font-family: serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #6d0000,0 0 40px #290000;
+        }
+        img {
+            max-width: 40%; /* Resmin maksimum genişliği sayfanın genişliğine göre ayarlanır */
+            height: auto;    /* Resmin orantılı olarak yüksekliği ayarlanır */
+            margin-left: 17%;
+            border-radius: 10px; /* Köşeleri yuvarlak yapma değeri */
+        }
+        .büyük-image {
+            max-width: 60%; /* ilk fotoğrafın büyüklüğü */
+            height: 60;
+            margin-left: 17%;
+        }
+        h1{
+            margin-left: 17%;
+        }
+        h2{
+            margin-left: 17%;
+        }
+        h3{
+            margin-left: 17%;
+        }
+        h4{
+            margin-left: 17%;
+        }
+        p{
+            margin-left: 17%;
+        }
+        #wrapper {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Sayfanın en üstüne git fonksiyonu
+        function goToTop() {
+            // Sayfanın en üstüne smooth animasyonu ile git
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" 
+            });
+        }
+        // Kullanıcının sayfa kaydırdığı zaman kontrol eden fonksiyon
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollTopBtn = document.getElementById("scrollTopButton");
+        }
+        // Kullanıcının gitmek istediği içerik 
+        function sayfayaGit(hedef) {
+            var hedefElement = document.getElementById(hedef);
+    
+            if (hedefElement) {
+                // Hedef başlığın konumuna kaydır (smooth bir animasyon eklenmiştir)
+                hedefElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        </script>
+    <ul>
+        <li><a href="Anasayfa.html">Anasayfa</a></li>
+        <li><a href="Hakkında.html">Hakkında</a></li>
+        <li><a href="Markalar.html">Markalar</a></li>
+        <li><a href="Sürücüler.html">Sürücüler</a></li>
+        <li><a href="Yarışlar.html">Yarışlar</a></li>
+    </ul>
+    
+    <div class="baslık">En Prestijli Otomobil Yarışı:<br>Formula 1 Hakkında Bilmeniz Gerekenler</div>
+
+    <button onclick="goToTop()" id="scrollTopButton" title="Sayfanın en üstüne git"> ↑ </button>
+
+    <div>
+        <br><br><br><br><br><br><br>  <!-- baslıktan sonra bosluk -->
+        <img class="büyük-image" src="image1.jpg">
+        <p>Formula 1 2023 için hazırlıklar başladı ve sezonun 5 Mart 2023'te başlayacağı duyuruldu.<br>
+           Sıkı yarışseverler, Formula 1'in tarihini neredeyse A'dan Z'ye bilir.Yeni sezonun başlaması için günler sayılırken hem<br>
+           yarışseverlerin bilgilerini tazelemek hem de yeni başlayanlar için Formula 1'i tanıtmak istedik.<br>
+        </p>
+        <button class="button" onclick="sayfayaGit('bolum1')">&rarr; Formula 1 Ne Zaman Başladı?</button><br>
+        <button class="button" onclick="sayfayaGit('bolum2')">&rarr; Formula 1 Programı         </button><br>
+        <button class="button" onclick="sayfayaGit('bolum3')">&rarr; Formula 1 Araç Kuralları   </button><br>
+        <button class="button" onclick="sayfayaGit('bolum4')">&rarr; Formula 1 Yarış Kuralları  </button><br>
+        <button class="button" onclick="sayfayaGit('bolum5')">&rarr; Formula 1 Lastik Çeşitleri </button><br>
+    </div>
+    <!-- İlk bölüm -->
+    <div id="wrapper">
+        <h1 id="bolum1">Formula 1 Ne Zaman Başladı?</h1>
+        <img src="image2.jpg">
+        <p>Formula 1’in tarihi, 1920’li yıllarda düzenlenmeye başlayan Avrupa kökenli Grand Prix yarışlarına kadar <br>
+           uzanıyor. Araya 2. Dünya Savaşı girdiği ve Avrupa’nın neredeyse her ülkesi savaşa bir şekilde dahil olduğu için<br>
+           1940’lı yıllarda yarışlar yapılamadı. Savaşın bitmesi ve yaraların sarılmasından sonra ise 1950 yılında ilk yarış<br>
+           İtalya’da düzenlendi ve o günden bu yana devam ediyor.
+        <br><br><br>
+           1950 yılında düzenlenen ilk şampiyonanın galibi, Alfa Romeo’nun pilotu İtalyan Giuseppe Farina oldu.<br>
+           Farina’nın takım arkadaşı Juan Manuel Fangio ise 1951, 1954, 1955, 1956 ve 1957 yıllarında düzenlenen<br>
+           Formula 1 şampiyonalarını birinci sırada bitirmeyi başardı. Fangio’nun hala bu başarısı geçilememiştir.<br>
+           Kısacası Fangio için ilk 10 yılı domine eden isim diyebiliriz.
+        <br><br><br>
+           Bunun dışında iki ayrı dominasyon dönemi daha yaşandı. 1980’li ve 1990’lı yıllar boyunca McLaren ve<br>
+           Williams takımları tarafından Formula 1 domine edildi. McLaren, Alman ve Japon üreticilerin ürettiği motorlar<br>
+           ile mühendisliği birleşitirdi. Williams ise Avrupalı, Japon ve Kuzey Amerikalı üreticilerin motorlarını kullandı. İki<br>
+           marka toplam 16 sürücüler ve 16 üreticiler şampiyonluğunu paylaştı.
+        <br><br><br>
+           Bir diğer dominasyon dönemi ise 2000’lerin başında yaşandı. Ferrari, güçlü motorları ve tasarımından aldığı<br>
+           güç ile 2000, 2001, 2002, 2003, 2004 ve 2005 yıllarında markalar ve pilotlarda şampiyon oldu. Michael <br>
+           Schumacher’in efsane olarak anılmasını sağlayan bu dönem ile Ferrari hem rakiplerine büyük bir gözdağı<br>
+           verdi hem de teknolojisinin ne kadar güçlü olduğunu gösterdi.
+        <br><br><br>
+           Formula 1 için centilmenler yarışıdır diyebiliriz. Çeşitli kuralların eşit olarak uygulandığı ve kimsenin<br>
+           ayrıcalığının olmadığı bir yarış. Bu nedenle çok üst düzey bir teknoloji ya da muhteşem ötesi bir yarış pilotu<br>
+           çıkmadığı sürece Formula 1 şampiyonasının domine edilmesi kolay değil. Elbette bunu başaran markalar ve<br>
+           pilotlar oldu. Ancak bunda hem markaların üstün motor ve tasarımları hem de pilotların insan ötesi gayret ve<br>
+           yeteneği etkili oldu.
+        </p>
+    </div>
+
+    <!-- İkinci bölüm -->
+    <div id="wrapper">
+        <h1 id="bolum2">F1 Programı</h1>
+        <img src="image10.jpg">
+        <p>
+            Formula 1 hafta sonu programı üç günden ve beş seanstan oluşuyor. Hafta sonu heyecanının ilk günü olan cuma 60'şar<br>
+            dakikalık iki ayrı serbest antrenman seansı gerçekleştiriliyor. Cumartesi günü ilk olarak 60 dakikalık üçüncü serbest<br>
+            antrenman seansı yapılırken, günün devamında sıralama turu heyecanı yaşanıyor. Sıralama turu seansı Q1, Q2 ve Q3<br>
+            olmak üzere üç sekanstan oluşuyor. 18 dakikalık Q1'de ve 15 dakikalık Q2'de en yavaş beşer pilot eleniyor, 12 dakikalık<br>
+            Q3'te ise 10 pilot nihai sıralama için mücadele ediyor. Hafta sonunun son seansı ise pazar günü yapılan yarış oluyor.
+        </p>
+    </div>
+    <!-- Üçüncü bölüm -->
+    <div id="wrapper">
+        <h1 id="bolum3">Formula 1 Araç Kuralları</h1>
+        <img src="image3.jpg">
+        <p>Formula 1'in çok çeşitli kuralları bulunuyor.Bunlardan en önemlisi ise arabalar ile ilgili.Formula 1'in arabalar
+           ile ilgili bazı kuralları şöyle:<br><br>
+            <h3>
+            1600 cc hacme ve V6 silindir yapısına sahip olan motorlar kullanılmalı<br>
+            Motorlar 15000 devir yapmalı<br>
+            Ulaşabildikleri beygir gücü; minimum 750, maksimum 800 HP olmalı<br>
+            Motor, çelik ve genellikle halk arasında döküm olarak anılan dökme demir ile üretilmeli<br>
+            Motorların üretebileceği maksimum tork ile ilgili herhangi bir sınır bulunmuyor<br>
+            Araçlar tek kişilik ve tekerlekleri açıkça dizayn edilmeli<br>
+            Araçlar minimum 743 kilogram olmalı<br>
+            Yarı otomatik vites kullanılmalı
+            </h3></p>
+        <p>
+           Bunun dışında Formula 1’in yarış kuralları da bulunuyor. Dünyanın en büyük yarış organizasyonlarından biri<br>
+           olması nedeniyle Formula 1, tahmin edebileceğiniz gibi çok çetrefilli yarış kurallarına sahip.
+        </p>
+    </div>
+
+    <!-- Dördüncü bölüm -->
+    <div id="wrapper">
+        <h1 id="bolum4">Formula 1 Yarış Kuralları</h1>
+        <img src="image4.jpg">
+        <p>
+            Formula 1 yarışlarında sıralamaya göre pilotlar puan alır ve aldıkları puan, takımlarının hanesine de eklenir.<br>
+            Böylece takımlar ve pilotlar şeklinde iki farklı puan türü oluşur. Bir Grand Prix’i 1. sırada bitiren pilot 25, 2.<br>
+            sırada bitiren pilot 18, 3. sırada bitiren pilot 15, 4. sırada bitiren pilot 12, 5. sırada bitiren pilot 10, 6. sırada<br>
+            bitiren pilot 8, 7 sırada bitiren pilot 6, 8. sırada bitiren pilot 4, 9. sırada bitiren pilot 2 ve 10. sırada bitiren pilot 1<br>
+            puan kazanır. Bunun dışında en hızlı turu atan pilot, ilk 10 içerisinde yer alması durumunda ekstra 1 puan kazanır. 
+            <br><br>
+            Yarış boyunca pilotlar en fazla 110 kilogram yakıt tüketebilir. Normalde litre cinsinden hesapladığı için kilogram<br>
+            denmesi size garip gelmiş olabilir ama kural bu şekilde geçiyor. Bunun dışında yarış ile ilgili çok sayıda teknik kural<br>
+            bulunuyor.<br>
+        </p>
+        <h2>Pole Pozisyonu</h2>
+        <p>
+            Pole pozisyonu yarışlara en öne başlanan yerdir, yani ilk sıradır. Yarışta ilk sırayı almak için pilotlar sıralama <br>
+            turlarına çıkar ve en iyi dereceyi alan pilot yarışa pole pozisyonunda başlar.<br>
+            "Pole pozisyonu" terimi; at yarışında, yarışa en öndeki yuvadan başlayan atı belirtmek için kullanılan ifadeden gelmektedir.
+        </p>
+        <h2>Yarış İçi Bilinmesi Gerekenler</h2>
+        <p>DRS (Drag Reduction System) ya da Türkçesiyle Sürüklenmeyi Azaltıcı Sistem aracın arka kanadındaki parçanın açılarak<br>
+           yere baskı kuvvetinin azaltılmasını amaçlar.Daha etkili bir hızlanma sağlamayı hedefleyen bu sistem özellikle geçişlerde<br>
+           epey işe yarar.Sıralama turlarında yarış boyunca, yarış gününde ise belirlenen yerlerde kullanılan DRS sistemi geçişleri<br>
+           artırıp F1 yarışlarını daha eğlenceli hale getirmeyi hedefler.
+           <br><br>
+           Pilotların zaman turu atmak için piste çıktıkları ve nispeten yavaş seyrettikleri çıkış turuna "out lap" denir.<br>
+           Yapılan hızlı tur denemesi "hot lap" olarak adlandırılırken, pit'e girmek için atılan sonraki tura ise "in lap" denir.
+           <br><br>
+           F1'de otomobillerin özellikle viraj girişlerinde denge problemi yaşamaları durumunda kaydıkları gözlenir. Otomobillerin<br>
+           arka lastiklerde tutuş kaybı yaşayarak arkadan kayması "oversteer" ve ön lastiklerde tutuş kaybı yaşayarak önden kayması<br>
+           "understeer" olarak adlandırılır.
+           <br><br>
+           Yarışlar sırasında bir rakibi geçmek "overtake" olarak adlandırılır.<br>
+           F1 takımlarının rakiplerini geçmek için kullandıkları pit stop stratejileri "undercut" ve "overcut" olarak adlandırılır.<br>
+           Eğer bir otomobil gerideyse ve rakibini pist üstünde geçemiyorsa erken pit stop tercihi ile "undercut" yapmış olur.<br>
+           Benzer şekilde rakibin pit stop'undan sonra hızlı turlar atarak daha geç pit stop yapılmasına ise "overcut" denir.<br>
+           <br><br>
+           DNF (Did Not Finish) bir otomobilin yarışı bitiremediği anlamına gelir. Yarışa başlayamayan bir otomobil DNS (Did Not Start)<br>
+           ve yarıştan ihraç edilen bir otomobil ise DSQ (Disqualified) şeklinde isimlendirilir.
+           <br><br>
+        </p>    
+        <h2>F1'de Pilot Ceza Puanı</h2>
+        <p>
+            FIA tarafından uygulanan pilot ceza sistemi, pilotların yarışlar sırasında tehlikeli olabilecek ya da kural dışı davranışlar<br>
+            (kazaya sebebiyet verme, güvenlik aracı arkasında hız yapma, sarı bayraklara uymama gibi) sergilemesini engellemek için oluşturulmuştur.<br>
+            Pilotlar bilerek ya da bilmeyerek bu tip davranışlar sergiledikleri zaman ceza puanı alırlar. 12 aylık zaman dilimi içinde<br>
+            12 ceza puanı alan pilotlar otomatik olarak bir yarıştan men edilirler.
+        </p>
+    </div>
+
+    <!-- Beşinci bölüm -->
+    <div id="wrapper">
+        <h1 id="bolum5">Formula 1 Lastik Çeşitleri</h1>
+        <img src="image8.jpg">
+        <p>
+            Pirelli Formula 1 lastikleri, her yıl kıyasıya rekabete sahne olan bu motor sporları mücadelesinde en önemli<br>
+            faktörlerden biridir. Pilotların her yarışta birçok strateji belirlemenin yanında en doğru lastik seçimini<br>
+            yapması gerekir. F1 yarışları için 2011 yılından bu yana tek lastik tedarikçisi İtalyan Pirelli markasıdır. Takımlar,<br>
+            Pirelli Formula 1 lastiği seçenekleri içerisinden her yarış öncesinde dilediği lastikleri tercih edebilmektedir.<br>
+        </p>
+        <h2>Formula 1 Lastik Seçimi Neden Önemli?</h2>
+        <p>
+            Pilotlar tarafından farklı farklı Pirelli Formula 1 lastikleri kullanılmasının nedeni, pist ve hava koşullarına göre<br>
+            en uygun performansı sağlamaktır. F1 yönetimi ve Pirelli, her yarış için üç farklı kuru zemin lastiği kategorisi<br>
+            belirlemiştir. Formula 1 takımları, her yarışta yumuşak, orta veya sert kuru zemin lastikleri içerisinden seçim<br>
+            yapmaktadır. Yağmurlu havalar için ıslak zemin koşullarına uygun iki tipte Pirelli lastik bulunmaktadır. Pilotlar,<br>
+            kendi stratejileri doğrultusunda hangi lastiği ne zaman kullanacaklarına karar vermektedir.<br>
+        </p>
+        <h2>Formula 1 Lastik Kategorileri Nelerdir?</h2>
+        <img src="image9.jpg">
+        <p>
+            <h3>Yumuşak Hamur Lastikler:</h3>
+            <p>Yumuşak hamurlu Formula 1 lastikleri, yüksek düzeyde yol tutuşu gerektiren<br>
+            tüm pistlere uygundur. Bununla birlikte yüksek hız performansı ve güçlü yol tutuşu nedeniyle serideki diğer<br>
+            lastiklerden daha kısa ömre sahiptir. Bu lastikler kırmızı şeritli olarak işaretlenir.</p>
+            <h3>Orta Hamur Lastikler:</h3>
+            <p>Orta hamurlu Formula 1 lastikleri, performans ile dayanıklılık arasında çok iyi<br>
+            bir denge yakalamaktadır. Bu lastikler sarı şeritli olarak işaretlenir.</p>
+            <h3>Sert Hamur Lastikler:</h3>
+            <p>Genellikle hızlı virajlara, aşındırıcı yüzeylere veya yüksek ortam sıcaklığına sahip olan<br>
+            ve lastiklere en çok baskı yükleyen pistler için tasarlanmıştır. Bu lastikler beyaz şeritli olarak işaretlenir.</p>
+            <h3>Yağmur Lastikleri:</h3>
+            <p>Yağmur lastikleri, ıslak zeminde kullanılmaktadır. Geçiş (intermediate) lastikler su<br>
+            birikintilerinin olmadığı ıslak zeminlerde ve kurumakta olan yüzeylerde kullanılırken, tam ıslak (wet) lastikler<br>
+            yoğun yağışta en etkin performansı sergiler. Geçiş lastikleri yeşil şeritli, tam ıslak lastikler ise mavi şeritli olarak işaretlenir.</p>
+        </p>
+        <br><br><br><br><br><br>
+    </div>
+</body>
+</html>

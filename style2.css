@@ -1,0 +1,297 @@
+/* takım butonları */
+
+.button10 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #ff2323;
+    border: 2px solid #bb0000;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #b71b1b;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #ff000063);
+    margin-left: 40%;
+}
+
+.button10:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 #ff000063;
+}
+.button11 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #00c2ae;
+    border: 2px solid #008679;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #00c2ae;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #00c2ae);
+    margin-left: 40%;
+}
+
+.button11:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 grey;
+}
+.button2 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #0a0066;
+    border: 2px solid #06003c;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #0a0066;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #0a0066);
+    margin-left: 40%;
+}
+
+.button2:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 #06003c;
+}
+.button3 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #ff8c00;
+    border: 2px solid #cd7100;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #ff8c00;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #ff8c00);
+    margin-left: 40%;
+}
+
+.button3:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 #cd7100;
+}
+.button4 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #246257;
+    border: 2px solid #004427;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #246257;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #246257);
+    margin-left: 40%;
+}
+
+.button4:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 black;
+}
+.button5 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #245e97;
+    border: 2px solid #00254b;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #245e97;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #245e97);
+    margin-left: 40%;
+}
+
+.button5:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 black;
+}
+.button6 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #090979;
+    border: 2px solid #000040;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #090979;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #090979);
+    margin-left: 40%;
+}
+
+.button6:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 black;
+}
+.button7 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: rgb(43, 43, 43);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 rgb(43, 43, 43);
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px rgb(43, 43, 43));
+    margin-left: 40%;
+}
+
+.button7:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 black;
+}
+.button8 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #560000;
+    border: 2px solid #230000;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #560000;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #560000);
+    margin-left: 40%;
+}
+
+.button8:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 black;
+}
+.button9 {
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #1e1e1e;
+    border: 2px solid #000000;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #1e1e1e;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px #1e1e1e);
+    margin-left: 40%;
+}
+
+.button9:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 black;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; 
+    transition: background-color 0.3 ease; /*renk geçiş animasyonu */
+}
+
+#scrollTopButton:hover {
+    background-color: #000000;
+}

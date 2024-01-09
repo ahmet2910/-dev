@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>F1 World Championship 2023</title>
+    <style>
+        .baslık {
+            font-size: 3em;
+            position: absolute;
+            margin-left: 25%;
+            top: 8%;
+            color: rgb(0, 0, 0);
+            font-family: serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #6d0000,0 0 40px #290000;
+        }
+        .küçük-image {
+            max-width: 20%; /* Resmin maksimum genişliği sayfanın genişliğine göre ayarlanır */
+            height: auto;    /* Resmin orantılı olarak yüksekliği ayarlanır */
+            margin-left: 20%;
+            border-radius: 10px; /* Köşeleri yuvarlak yapma değeri */
+        }
+        .büyük-image {
+            max-width: 60%; /* ilk fotoğrafın büyüklüğü */
+            height: 60;
+            margin-left: 20%;
+        }
+        .flex-container {
+            display: flex;
+            align-items: top;
+        }
+        .flag {
+            width: 25px; /* Ayarlamak istediğiniz genişlik */
+            height: 15px; /* Ayarlamak istediğiniz yükseklik */
+        }
+        h1{
+            margin-left: 35%;
+        }
+        h2{
+            margin-left: 20%;
+        }
+        h3{
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Sayfanın en üstüne git fonksiyonu
+        function goToTop() {
+            // Sayfanın en üstüne smooth animasyonu ile git
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" 
+            });
+        }
+        // Kullanıcının sayfa kaydırdığı zaman kontrol eden fonksiyon
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollTopBtn = document.getElementById("scrollTopButton");
+        }
+        function sayfayaGit(hedef) {
+            var hedefElement = document.getElementById(hedef);
+
+            if (hedefElement) {
+                // Hedef başlığın konumuna kaydır (smooth bir animasyon eklenmiştir)
+                hedefElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Kullanıcının gitmek istediği içerik 
+        function sayfayaGit(hedef) {
+            var hedefElement = document.getElementById(hedef);
+
+            if (hedefElement) {
+                // Hedef başlığın konumuna kaydır (smooth bir animasyon eklenmiştir)
+                hedefElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+    <button onclick="goToTop()" id="scrollTopButton" title="Sayfanın en üstüne git"> ↑ </button>
+    <ul>
+        <li><a href="Anasayfa.html">Anasayfa</a></li>
+        <li><a href="Hakkında.html">Hakkında</a></li>
+        <li><a href="Markalar.html">Markalar</a></li>
+        <li><a href="Sürücüler.html">Sürücüler</a></li>
+        <li><a href="Yarışlar.html">Yarışlar</a></li>
+    </ul>
+
+    <div class="baslık">En Prestijli Otomobil Yarışı:<br>F1 2023 Sezonu Sürücüleri</div><br><br><br><br><br><br><br><br><br>
+    
+    <img class="büyük-image" src="drivers.jpg">
+
+    <h1>Red Bull Racing</h1>
+    <button class="button12" onclick="sayfayaGit('max')"><img class="flag" src="nl-2.svg"> VERSTAPPEN</button>
+    <button class="button12" onclick="sayfayaGit('checo')"><img class="flag" src="mx-2.svg"> PEREZ</button>
+    <h1>Mercedes-AMG</h1>
+    <button class="button12" onclick="sayfayaGit('lewis')"><img class="flag" src="gb-2.svg"> HAMİLTON</button>
+    <button class="button12" onclick="sayfayaGit('george')"><img class="flag" src="gb-2.svg"> RUSSEL</button>
+    <h1>Scuderia Ferrari</h1>
+    <button class="button12" onclick="sayfayaGit('charles')"><img class="flag" src="mc-2.svg"> LECLERC</button>
+    <button class="button12" onclick="sayfayaGit('carlos')"><img class="flag" src="es-2.svg"> SAİNZ JR</button>
+    <h1>Mclaren-Mercedes</h1>
+    <button class="button12" onclick="sayfayaGit('lando')"><img class="flag" src="gb-2.svg"> NORRİS</button>
+    <button class="button12" onclick="sayfayaGit('oscar')"><img class="flag" src="au-2.svg"> PİASTRİ</button>
+    <h1>Aston Martin F1</h1>
+    <button class="button12" onclick="sayfayaGit('fernando')"><img class="flag" src="es-2.svg"> ALONSO</button>
+    <button class="button12" onclick="sayfayaGit('lance')"><img class="flag" src="ca-2.svg"> STROLL</button>
+    <h1>Alpine F1</h1>
+    <button class="button12" onclick="sayfayaGit('pierre')"><img class="flag" src="fr-2.svg"> GASLY</button>
+    <button class="button12" onclick="sayfayaGit('esteban')"><img class="flag" src="fr-2.svg"> OCON</button>
+    <h1>Williams F1</h1>
+    <button class="button12" onclick="sayfayaGit('alex')"><img class="flag" src="th-2.svg"> ALBON</button>
+    <button class="button12" onclick="sayfayaGit('logan')"><img class="flag" src="US-2.svg"> SERGEANT</button>
+    <h1>AlphaTauri F1</h1>
+    <button class="button12" onclick="sayfayaGit('yuki')"><img class="flag" src="jp-2.svg"> TSUNODA</button>
+    <button class="button12" onclick="sayfayaGit('nyck')"><img class="flag" src="au-2.svg"> RİCCİARDO</button>
+    <h1>Alfa Romeo F1</h1>
+    <button class="button12" onclick="sayfayaGit('valtteri')"><img class="flag" src="fi-2.svg"> BOTTAS</button>
+    <button class="button12" onclick="sayfayaGit('guanyu')"><img class="flag" src="cn-2.svg"> ZHOU</button>
+    <h1>Haas F1</h1>
+    <button class="button12" onclick="sayfayaGit('nico')"><img class="flag" src="de-2.svg"> HULKENBERG</button>
+    <button class="button12" onclick="sayfayaGit('kevin')"><img class="flag" src="dk-2.svg"> MAGNUSSEN</button>
+    <br><br><br><br><br><br>
+
+    <h2 id="max">MAX VERSTAPPEN</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="max.jpg">
+        <h3>Team &rarr; Red Bull Racing <br>
+            Country &rarr; Netherlands <br>
+            Podiums &rarr; 98 <br>
+            Points &rarr; 2586,5 <br>
+            Grand Prix entered &rarr; 185 <br>
+            World Championship &rarr; 3 <br>
+            Highest Race Finish &rarr; 1 (54) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 30/09/1997 <br>
+            Place of Birth &rarr; Hasselt, Belgium <br>
+        </h3>
+    </div>
+
+    <h2 id="checo">SERGİO PEREZ</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="checo.jpg">
+        <h3>Team &rarr; Red Bull Racing <br>
+            Ülke &rarr; Mexico <br>
+            Podiums &rarr; 35 <br>
+            Points &rarr; 1486 <br>
+            Grand Prix entered &rarr; 258 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (6) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 26/01/1990 <br>
+            Place of Birth &rarr; Guadalajara, Mexico <br>
+        </h3>
+    </div>
+    
+    <h2 id="lewis">LEWİS HAMİLTON</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="lewis.jpg">
+        <h3>Team &rarr; Mercedes <br>
+            Country &rarr; United Kingdom <br>
+            Podiums &rarr; 197 <br>
+            Points &rarr; 4639.5 <br>
+            Grand Prix entered &rarr; 332 <br>
+            World Championship &rarr; 7 <br>
+            Highest Race Finish &rarr; 1 (103) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 07/01/1985 <br>
+            Place of Birth &rarr; Stevenage, England <br>
+        </h3>
+    </div>
+    
+    <h2 id="george">GEORGE RUSSEL</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="george.jpg">
+        <h3>Team &rarr; Mercedes <br>
+            Country &rarr; United Kingdom <br>
+            Podiums &rarr; 11 <br>
+            Points &rarr; 469 <br>
+            Grand Prix entered &rarr; 104 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (1) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 15/02/1998 <br>
+            Place of Birth &rarr; King's Lynn, England <br>
+        </h3>
+    </div>
+    
+    <h2 id="charles">CHARLES LECLERC</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="charles.jpg">
+        <h3>Team &rarr; Ferrari <br>
+            Country &rarr; Monaco <br>
+            Podiums &rarr; 30 <br>
+            Points &rarr; 1074 <br>
+            Grand Prix entered &rarr; 125 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (5) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 16/10/1997 <br>
+            Place of Birth &rarr; Monte Carlo, Monaco <br>
+        </h3>
+    </div>
+    
+    <h2 id="carlos">CARLOS SAİNZ JR</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="carlos.jpg">
+        <h3>Team &rarr; Ferrari <br>
+            Country &rarr; Spain <br>
+            Podiums &rarr; 18 <br>
+            Points &rarr; 982.5 <br>
+            Grand Prix entered &rarr; 185 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (2) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 01/09/1994 <br>
+            Place of Birth &rarr; Madrid, Spain <br>
+        </h3>
+    </div>
+    
+    <h2 id="lando">LANDO NORRİS</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="lando.jpg">
+        <h3>Team &rarr; McLaren <br>
+            Country &rarr; United Kingdom <br>
+            Podiums &rarr; 13 <br>
+            Points &rarr; 633 <br>
+            Grand Prix entered &rarr; 104 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 2 (7) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 13/11/1999 <br>
+            Place of Birth &rarr; Bristol, England <br>
+        </h3>
+    </div>
+    
+    <h2 id="oscar">OSCAR PİASTRİ</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="oscar.jpg">
+        <h3>Team &rarr; McLaren <br>
+            Country &rarr; Australia <br>
+            Podiums &rarr; 2 <br>
+            Points &rarr; 97 <br>
+            Grand Prix entered &rarr; 22 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 2 (1) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 06/04/2001 <br>
+            Place of Birth &rarr; Melbourne, Victoria <br>
+        </h3>
+    </div>
+    
+    <h2 id="fernando">FERNANDO ALONSO</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="fernando.jpg">
+        <h3>Team &rarr; Aston Martin <br>
+            Country &rarr; Spain <br>
+            Podiums &rarr; 106 <br>
+            Points &rarr; 2267 <br>
+            Grand Prix entered &rarr; 380 <br>
+            World Championship &rarr; 2 <br>
+            Highest Race Finish &rarr; 1 (32) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 29/07/1981 <br>
+            Place of Birth &rarr; Oviedo, Spain <br>
+        </h3>
+    </div>
+    
+    <h2 id="lance">LANCE STROLL</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="lance.jpg">
+        <h3>Team &rarr; Aston Martin <br>
+            Country &rarr; Canada <br>
+            Podiums &rarr; 3 <br>
+            Points &rarr; 268 <br>
+            Grand Prix entered &rarr; 143 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 3 (3) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 29/10/1998 <br>
+            Place of Birth &rarr; Montreal, Canada <br>
+        </h3>
+    </div>
+    
+    <h2 id="pierre">PİERRE GASLY</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="pierre.jpg">
+        <h3>Team &rarr; Alpine <br>
+            Country &rarr; France <br>
+            Podiums &rarr; 4 <br>
+            Points &rarr; 394 <br>
+            Grand Prix entered &rarr; 130 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (1) <br>
+            Highest Grid Position &rarr; 2 <br>
+            Date of Birth &rarr; 07/02/1996 <br>
+            Place of Birth &rarr; Rouen, France <br>
+        </h3>
+    </div>
+    
+    <h2 id="esteban">ESTEBAN OCON</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="esteban.jpg">
+        <h3>Team &rarr; Alpine <br>
+            Country &rarr; France <br>
+            Podiums &rarr; 3 <br>
+            Points &rarr; 422 <br>
+            Grand Prix entered &rarr; 133 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (1) <br>
+            Highest Grid Position &rarr; 3 <br>
+            Date of Birth &rarr; 17/09/1996 <br>
+            Place of Birth &rarr; Évreux, Normandy <br>
+        </h3>
+    </div>
+    
+    <h2 id="alex">ALEXANDER ALBON</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="alex.jpg">
+        <h3>Team &rarr; Williams <br>
+            Country &rarr; Thailand <br>
+            Podiums &rarr; 2 <br>
+            Points &rarr; 228 <br>
+            Grand Prix entered &rarr; 81 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 3 (2) <br>
+            Highest Grid Position &rarr; 4 <br>
+            Date of Birth &rarr; 23/03/1996 <br>
+            Place of Birth &rarr; London, England <br>
+        </h3>
+    </div>
+    
+    <h2 id="logan">LOGAN SERGEANT</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="logan.jpg">
+        <h3>Team &rarr; Williams <br>
+            Country &rarr; United States <br>
+            Podiums &rarr; N/A <br>
+            Points &rarr; 1 <br>
+            Grand Prix entered &rarr; 22 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 10 (1) <br>
+            Highest Grid Position &rarr; 6 <br>
+            Date of Birth &rarr; 31/12/2000 <br>
+            Place of Birth &rarr; Fort Lauderdale, Florida <br>
+        </h3>
+    </div>
+    
+    <h2 id="yuki">YUKİ TSUNODA</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="yuki.jpg">
+        <h3>Team &rarr; AlphaTauri <br>
+            Country &rarr; Japan <br>
+            Podiums &rarr; N/A <br>
+            Points &rarr; 61 <br>
+            Grand Prix entered &rarr; 66 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 4 (1) <br>
+            Highest Grid Position &rarr; 6 <br>
+            Date of Birth &rarr; 11/05/2000 <br>
+            Place of Birth &rarr; Sagamihara, Japan <br>
+        </h3>
+    </div>
+    
+    <h2 id="nyck">DANİEL RİCCİARDO</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="daniel.jpg">
+        <h3>Team &rarr; AlphaTauri <br>
+            Country &rarr; Australia <br>
+            Podiums &rarr; 32 <br>
+            Points &rarr; 1317 <br>
+            Grand Prix entered &rarr; 239 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (8) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 01/07/1989 <br>
+            Place of Birth &rarr; Perth, Australia <br>
+        </h3>
+    </div>
+    
+    <h2 id="valtteri">VALTTERİ BOTTAS</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="valtteri.jpg">
+        <h3>Team &rarr; Sauber(Alfa Romeo) <br>
+            Country &rarr; Finland <br>
+            Podiums &rarr; 67 <br>
+            Points &rarr; 1797 <br>
+            Grand Prix entered &rarr; 222 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 1 (10) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 28/08/1989 <br>
+            Place of Birth &rarr; Nastola, Finland <br>
+        </h3>
+    </div>
+    
+    <h2 id="guanyu">GUANYU ZHOU</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="zhou.jpg">
+        <h3>Team &rarr; Sauber(Alfa Romeo)  <br>
+            Country &rarr; China <br>
+            Podiums &rarr; N/A <br>
+            Points &rarr; 12 <br>
+            Grand Prix entered &rarr; 44 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 8 (1) <br>
+            Highest Grid Position &rarr; 5 <br>
+            Date of Birth &rarr; 30/05/1999 <br>
+            Place of Birth &rarr; Shanghai, China <br>
+        </h3>
+    </div>
+    
+    <h2 id="nico">NİCO HULKENBERG</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="nico.jpg">
+        <h3>Team &rarr; Haas F1 Team <br>
+            Country &rarr; Germany <br>
+            Podiums &rarr; N/A <br>
+            Points &rarr; 530 <br>
+            Grand Prix entered &rarr; 206 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 4 (3) <br>
+            Highest Grid Position &rarr; 1 <br>
+            Date of Birth &rarr; 19/08/1987 <br>
+            Place of Birth &rarr; Emmerich am Rhein, Germany <br>
+        </h3>
+    </div>
+    
+    <h2 id="kevin">KEVİN MAGNUSSEN</h2>
+    <div class="flex-container">
+        <img class="küçük-image" src="kevin.jpg">
+        <h3>Team &rarr;Haas F1 Team <br>
+            Country &rarr; Denmark <br>
+            Podiums &rarr; 1<br>
+            Points &rarr; 186 <br>
+            Grand Prix entered &rarr; 164 <br>
+            World Championship &rarr; N/A <br>
+            Highest Race Finish &rarr; 2 (1) <br>
+            Highest Grid Position &rarr; 4 <br>
+            Date of Birth &rarr; 05/10/1992 <br>
+            Place of Birth &rarr; Roskilde, Denmark <br>
+        </h3>
+    </div>
+    <br><br><br>
+</html>

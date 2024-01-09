@@ -1,0 +1,131 @@
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: block;
+    padding: 15px 20px;
+    position: relative;
+    top: 0;
+}
+
+ul li a:before,
+ul li a:after {
+    transition: all 0.5s;
+}
+
+ul li a:hover {
+    color: #a91717;
+    background-color: rgb(255, 255, 255);
+}
+
+ul li a:hover:before,
+ul li a:hover:after {
+    transform: scaleX(1);
+    background-color: #a91717;
+}
+
+/* diğer butonlar */
+.button{
+    margin-left: 17%;
+    color: rgb(0, 0, 0);
+    outline: 0;
+    border: 2px solid currentcolor;
+    transition: 0.3s ease all;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 25px;
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 400px;
+}
+.button:hover{
+    color:  #fff;
+    border-color: transparent;
+    background-color: rgb(0, 0, 0);
+}
+
+.button1{
+    margin-left: 9%;
+    color: rgb(0, 0, 0);
+    outline: 0;
+    border: 2px solid currentcolor;
+    transition: 0.3s ease all;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 25px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 200px;
+}
+.button1:hover{
+    color:  #fff;
+    border-color: transparent;
+    background-color: rgb(0, 0, 0);
+}
+.button12{
+    margin-left: 20%;
+    color: rgb(0, 0, 0);
+    outline: 0;
+    border: 2px solid currentcolor;
+    transition: 0.3s ease all;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 25px;
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 200px;
+}
+.button12:hover{
+    color:  #fff;
+    border-color: transparent;
+    background-color: rgb(105, 105, 105);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; 
+    transition: background-color 0.3 ease; /*renk geçiş animasyonu */
+}
+
+#scrollTopButton:hover {
+    background-color: #000000;
+}

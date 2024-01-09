@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>F1 World Championship 2023</title>
+    <style>
+        .baslık {
+            font-size: 3em;
+            position: absolute;
+            margin-left: 25%;
+            top: 8%;
+            color: rgb(0, 0, 0);
+            font-family: serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #6d0000,0 0 40px #290000;
+        }
+        img {
+            max-width: 40%; /* Resmin maksimum genişliği sayfanın genişliğine göre ayarlanır */
+            height: auto;    /* Resmin orantılı olarak yüksekliği ayarlanır */
+            margin-left: 20%;
+            border-radius: 10px; /* Köşeleri yuvarlak yapma değeri */
+        }
+        table {
+            margin-left: 20%;
+            width: 40%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        h1{
+            margin-left: 20%;
+        }
+        h2{
+            margin-left: 20%;
+        }
+        h3{
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Sayfanın en üstüne git fonksiyonu
+        function goToTop() {
+            // Sayfanın en üstüne smooth animasyonu ile git
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" 
+            });
+        }
+        // Kullanıcının sayfa kaydırdığı zaman kontrol eden fonksiyon
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollTopBtn = document.getElementById("scrollTopButton");
+        }
+
+        // Kullanıcının gitmek istediği içerik 
+        function sayfayaGit(hedef) {
+            var hedefElement = document.getElementById(hedef);
+
+            if (hedefElement) {
+                // Hedef başlığın konumuna kaydır (smooth bir animasyon eklenmiştir)
+                hedefElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+    <button onclick="goToTop()" id="scrollTopButton" title="Sayfanın en üstüne git"> ↑ </button>
+    <ul>
+        <li><a href="Anasayfa.html">Anasayfa</a></li>
+        <li><a href="Hakkında.html">Hakkında</a></li>
+        <li><a href="Markalar.html">Markalar</a></li>
+        <li><a href="Sürücüler.html">Sürücüler</a></li>
+        <li><a href="Yarışlar.html">Yarışlar</a></li>
+    </ul>
+    <div class="baslık">En Prestijli Otomobil Yarışı:<br>F1 2023 Sezonu Markaları</div>
+    <br><br><br><br><br><br><br>
+    <div>
+        <button class="button2" onclick="sayfayaGit('redbull')">&rarr; Red Bull Racing F1</button><br><br>
+        <button class="button11" onclick="sayfayaGit('mercedes')">&rarr; Mercedes F1</button><br><br>
+        <button class="button10" onclick="sayfayaGit('ferrari')">&rarr; Scuderia Ferrari F1</button><br><br>
+        <button class="button3" onclick="sayfayaGit('mclaren')">&rarr; Mclaren-Mercedes F1</button><br><br>
+        <button class="button4" onclick="sayfayaGit('astonmartin')">&rarr; Aston Martin F1</button><br><br>
+        <button class="button5" onclick="sayfayaGit('alpine')">&rarr; Alpine F1</button><br><br>
+        <button class="button6" onclick="sayfayaGit('williams')">&rarr; Williams F1</button><br><br>
+        <button class="button7" onclick="sayfayaGit('alphatauri')">&rarr; AlphaTauri F1</button><br><br>
+        <button class="button8" onclick="sayfayaGit('alfaromeo')">&rarr; Alfa Romeo F1</button><br><br>
+        <button class="button9" onclick="sayfayaGit('haas')">&rarr; Haas F1</button><br><br>
+    </div>
+    <br><br><br><br><br><br>
+    <h1 id="redbull">Red Bull Racing</h1>
+    <img src="redbull.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Oracle Red Bull Racing</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Milton Keynes, Buckinghamshire, Birleşik Krallık</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Dietrich Mateschitz</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.redbullracing.com" target="_blank">redbullracing.com</a></td>
+        </tr>
+    </table>
+
+    <h2>Takım ve Araç Bilgileri</h2>
+
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Helmut Marko (Red Bull GmbH Danışmanı)<br>Christian Horner (Takım Patronu)</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Adrian Newey</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>1. Hollanda Max Verstappen<br>11. Meksika Sergio Pérez</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Yeni Zelanda Liam Lawson<br>Norveç Dennis Hauger<br>Barbados Zane Maloney</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>Red Bull Racing RB19</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>RBPT</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>2005 Avustralya Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>6 (2010, 2011, 2012, 2013, 2022, 2023)</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>7 (2010, 2011, 2012, 2013, 2021, 2022, 2023)</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>109</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>93</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>94</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>1. (860 puan)</td>
+        </tr>
+    </table>
+    <h1 id="mercedes">Mercedes-AMG</h1>
+    <img src="mercedes.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Mercedes-AMG Petronas F1 Team</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Brackley,Northamptonshire,Birleşik Krallık</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Karl Benz</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.mercedesamgf1.com" target="_blank">mercedesamgf1.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Toto Wolff(Takım Patroun & CEO)<br>Andy Cowell(MD)</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>James Allison</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(44) Lewis Hamilton<br>(63) George Russell</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>(47) Mick Schumacher</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>W14</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Mercedes M13 E Performance</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>1954 Fransa Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>8 (2014, 2015, 2016, 2017, 2018, 2019, 2020,2021)</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>9 (1954, 1955, 2014, 2015, 2016, 2017, 2018, 2019, 2020)</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>116</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>129</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>95</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>2. (409 puan)</td>
+        </tr>
+    </table>
+    <h1 id="ferrari">Scuderia Ferrari</h1>
+    <img src="ferrari.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Scuderia Ferrari</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Maranello, İtalya</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Enzo Ferrari</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.ferrari.com/en-EN/formula1" target="_blank">ferrari.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td> Frédéric Vasseur</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(16) Charles Leclerc<br>(55) Carlos Sainz JR.</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>(99)Antonio Giovinazzi<br>Antonio Fuoco<br>Robert Shwartzman</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>SF-23</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Ferrari 066/10</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>1950 Monako Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>16 (1961, 1964, 1975, 1976,
+                1977, 1979, 1982, 1983,
+                1999, 2000, 2001, 2002,
+                2003, 2004, 2007, 2008)</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>15 (1952, 1953, 1956, 1958,
+                1961, 1964, 1975, 1977,
+                1979, 2000, 2001, 2002,
+                2003, 2004, 2007)</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>241</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>243</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>258</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>3. (406 puan)</td>
+        </tr>
+    </table>
+    <h1 id="mclaren">Mclaren-Mercedes</h1>
+    <img src="mclaren.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Mclaren Racing F1 Team</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>McLaren Technology Centre
+                Woking, Surrey, Birleşik Krallık</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Bruce Mclaren</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.mclaren.com/racing/" target="_blank">	mclaren.com/racing/</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Zak Brown(CEO)</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Andre Stella</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(4) Lando Norris<br>(81) Oscar Piastri</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>(47) Mick Schumacher<br>Stoffel Vandoorne</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>MCL60</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Mercedes</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>1966 Monaco Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>8 (1974, 1984, 1985, 1988, 1989, 1990, 1991, 1998)</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>12 (1974, 1976, 1984, 1985, 1986, 1988, 1989, 1990, 1991, 1998, 1999, 2008)</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>183</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>156</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>162</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>4. (302 puan)</td>
+        </tr>
+    </table>
+    <h1 id="astonmartin">Aston Martin F1</h1>
+    <img src="astonmartin.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Aston Martin Aramco Cognizant F1 Team</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Silverstone,Birleşik Krallık</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Lionel Martin<br>Robert Bamford</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.astonmartinf1.com" target="_blank">astonmartinf1.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Mike Krack</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Dan Fallows</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(14) Fernando Alonso<br>(18) Lance Stroll</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Stoffel Vandoorne<br>Felipe Drugovich</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>Aston Martin AMR23</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Mercedes</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>1959 Hollanda Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>5. (280 puan)</td>
+        </tr>
+    </table>
+    <h1 id="alpine">Alpine F1</h1>
+    <img src="alpine.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Alpine F1 Racing Team</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td> Viry-Châtillon(Motor) Fransa,Enstone(Şasi) Birleşik Krallık</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Jean Rédélé</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.alpine-cars.co.uk/formula-1.html" target="_blank">alpinef1.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Bruno Famin</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Pat Fry</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(10) Pierre Gasly<br>(31) Esteban Ocon</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Jack Doohan</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>Alpine A523</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Renault E-Tech RE23</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>2021 Bahreyn Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>6. (120 puan)</td>
+        </tr>
+    </table>
+    <h1 id="williams">Williams F1</h1>
+    <img src="williams.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>ROKit Williams Racing</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Grove, Oxfordshire,Birleşik Krallık</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Sir Frank Williams<br> Sir Patrick Head</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.williamsf1.com/" target="_blank">williamsf1.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>James Vowles</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Mike O'Driscoll </td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(23) Alexander Albon<br>(6) Logan Sargeant</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Jack Aitken<br> Roy Nissany </td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>FW43</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Mercedes</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>1977 Spanish Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>9 (1980, 1981, 1986, 1987, 1992, 1993, 1994, 1996, 1997)</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>7 (1980, 1982, 1987, 1992, 1993, 1996, 1997)</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>114</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>128</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>133</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>7. (28 puan)</td>
+        </tr>
+    </table>
+    <h1 id="alphatauri">AlphaTauri F1</h1>
+    <img src="alphatauri.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Scuderia AlphaTauri</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Faenza, İtalya</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Dietrich Mateschitz</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://scuderia.alphatauri.com/en/scuderia-alphatauri-f1-team/" target="_blank">scuderiaalphatauri.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Franz Tost</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Jody Egginton</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(3) Daniel Ricciardo<br>(22) Yuki Tsunoda<br> (21)Nyck de Vries</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Liam Lawson</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>AT04</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>RBPT RBPTH001</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>2020 Avusturya Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>8. (25 puan)</td>
+        </tr>
+    </table>
+    <h1 id="alfaromeo">Alfa Romeo F1</h1>
+    <img src="alfaromeo.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>Alfa Romeo F1 Team Stake</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Zürih, İsviçre</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Nicola Romeo<br> Alexandre Darracq</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.sauber-group.com/motorsport/formula-1/" target="_blank">sauber-group.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Alessandro Alunni Bravi</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Jan Monchaux</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(24) Guanyu Zhou<br>(77) Valtteri Bottas</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Théo Pourchaire</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>C43</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Ferrari 066/10</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>1950 Britanya Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>2 (1950, 1951)</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>12</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>16</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>9. (16 puan)</td>
+        </tr>
+    </table>
+    <h1 id="haas">Haas F1</h1>
+    <img src="haas.jpg">
+    <h2>Genel Bilgiler</h2>
+    <table>
+        <tr>
+            <th>Uzun Adı</th>
+            <td>MoneyGram Haas F1 Team</td>
+        </tr>
+        <tr>
+            <th>Merkez</th>
+            <td>Kannapolis, Kuzey Karolina</td>
+        </tr>
+        <tr>
+            <th>Kurucu(lar)</th>
+            <td>Gene Haas</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://www.haasf1team.com/" target="_blank">haasf1team.com</a></td>
+        </tr>
+    </table>
+    <h2>Takım ve Araç Bilgileri</h2>
+    <table>
+        <tr>
+            <th>Takım Patronu</th>
+            <td>Günther Steiner</td>
+        </tr>
+        <tr>
+            <th>Teknik Patron</th>
+            <td>Rob Taylor (Baş Tasarımcı)<br> Ben Agathangelou (Baş Aerodinamikçi)</td>
+        </tr>
+        <tr>
+            <th>Yarış Pilotları</th>
+            <td>(27) Nico Hulkenberg<br>(20) Kevin Magnussen</td>
+        </tr>
+        <tr>
+            <th>Test Pilotları</th>
+            <td>Pietro Fittipaldi</td>
+        </tr>
+        <tr>
+            <th>Şasi</th>
+            <td>VF-23</td>
+        </tr>
+        <tr>
+            <th>Motor</th>
+            <td>Ferrari 066/10</td>
+        </tr>
+        <tr>
+            <th>Lastik</th>
+            <td>Pirelli</td>
+        </tr>
+    </table>
+    <h2>Formula 1 Dünya Şampiyonası Kariyeri</h2>
+    <table>
+        <tr>
+            <th>İlk Yarış</th>
+            <td>2016 Avusturalya Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Son Yarış</th>
+            <td>2023 Abu Dabi Grand Prix</td>
+        </tr>
+        <tr>
+            <th>Takımlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Pilotlar Şampiyonluğu</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Zafer</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Pol Pozisyonu</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>En Hızlı Tur</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>2023 Pozisyonu</th>
+            <td>10. (12 puan)</td>
+        </tr>
+    </table>
+</body>
+</html>

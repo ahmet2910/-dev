@@ -1,0 +1,22 @@
+.button13{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    outline: 0;
+    border: 2px solid currentcolor;
+    transition: 0.3s ease all;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 25px;
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 200px;
+}
+.button13:hover{
+    color:  #fff;
+    border-color: transparent;
+    background-color: rgb(105, 105, 105);
+}
